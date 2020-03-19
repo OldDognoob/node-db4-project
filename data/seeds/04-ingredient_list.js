@@ -1,9 +1,9 @@
 
 exports.seed = function(knex) {
-  return knex("ingredient_lists")
+  return knex("ingredient_list")
     .del()
     .then(function() {
-      return knex("ingredient_lists").insert([
+      return knex("ingredient_list").insert([
         { recipe_id: 1, ingredient_id: 1,  quantity:1  },
         { recipe_id: 1, ingredient_id: 2,  quantity:0.75},
         { recipe_id: 1, ingredient_id: 3,  quantity:1  },
